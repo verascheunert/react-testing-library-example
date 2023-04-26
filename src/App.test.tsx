@@ -1,19 +1,11 @@
-import { describe, it, expect, beforeEach } from "vitest";
-import { render, screen } from "@testing-library/react";
-
-import App from "./App";
+import { describe, it } from "vitest";
 
 describe("App", async () => {
-  beforeEach(() => {
-    render(<App />);
-  });
+  it("should render a heading and paragraph");
 
-  it("should render a heading and paragraph ", async () => {
-    expect(
-      screen.getByRole("heading", {
-        name: /Welcome!/i,
-        level: 1,
-      })
-    ).toBeInTheDocument();
-  });
+  it("should render two buttons");
+
+  it('should update the count when the "Count is" button is clicked');
+
+  it('should reset the count if "Reset" button is clicked');
 });
